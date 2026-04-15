@@ -20,7 +20,9 @@ omarchy-theme-install https://github.com/peteonrails/omarchy-alpenglow-theme
 That's it for core theming — terminals, Hyprland, Waybar, Mako, and SwayOSD
 all pick up Alpenglow automatically.
 
-For optional extras (CAVA, Zed, Warp, GTK4, Vencord), run the helper script:
+For optional extras (CAVA, Zed, Warp, GTK4, Vencord), run the helper script
+(pattern borrowed from [signaldirective](https://github.com/signaldirective)'s
+[Andromeda theme](https://github.com/signaldirective/andromeda)):
 
 ```bash
 cd ~/.config/omarchy/themes/alpenglow
@@ -107,8 +109,3 @@ Wallpapers are sourced from [Wallhaven](https://wallhaven.cc) — see
 [CREDITS.md](CREDITS.md) for per-wallpaper attribution.
 
 Palette built using [Aether](https://github.com/bjarneo/aether).
-
-### Inspiration
-
-- [**OldJobobo**](https://github.com/OldJobobo) — the [Lumon theme](https://github.com/OldJobobo/omarchy-lumon-theme) was the structural model for this repo: file layout, numbered background naming, preview + wallpaper gallery in the README, and the general "ship a polished Omarchy theme" vibe.
-- [**signaldirective**](https://github.com/signaldirective) — the [Andromeda theme](https://github.com/signaldirective/andromeda) pioneered the optional-extras `install.sh` pattern (detect presence, prompt, back up, install) that this theme borrows.
