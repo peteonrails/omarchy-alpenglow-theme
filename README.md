@@ -15,8 +15,20 @@ where mountains hold warm light after the sun has set.
 
 ```bash
 omarchy-theme-install https://github.com/peteonrails/omarchy-alpenglow-theme
-omarchy-theme-set alpenglow
 ```
+
+That's it for core theming — terminals, Hyprland, Waybar, Mako, and SwayOSD
+all pick up Alpenglow automatically.
+
+For optional extras (CAVA, Zed, Warp, GTK4, Vencord), run the helper script:
+
+```bash
+cd ~/.config/omarchy/themes/alpenglow
+./install.sh
+```
+
+Omarchy doesn't currently run post-install hooks, so this is a separate manual
+step. Every prompt is skippable — see [Optional Extras](#optional-extras) below.
 
 Cycle wallpapers with `omarchy-theme-bg-next` or from the Omarchy menu.
 
