@@ -143,3 +143,9 @@ Wallpapers are sourced from [Wallhaven](https://wallhaven.cc) — see
 [CREDITS.md](CREDITS.md) for per-wallpaper attribution.
 
 Palette built using [Aether](https://github.com/bjarneo/aether).
+
+Thanks to [**OldJobobo**](https://github.com/OldJobobo) for pro tips that
+meaningfully improved this theme — specifically the terminal-only opacity
+approach (text stays crisp, background goes transparent; browsers, Discord,
+1Password etc. remain fully opaque) and `ffmpeg -q:v 2` wallpaper
+recompression, which took the backgrounds directory from 23MB to 9MB.
