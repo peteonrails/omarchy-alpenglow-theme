@@ -95,3 +95,8 @@ Wallpapers are sourced from [Wallhaven](https://wallhaven.cc) — see
 [CREDITS.md](CREDITS.md) for per-wallpaper attribution.
 
 Palette built using [Aether](https://github.com/bjarneo/aether).
+
+### Inspiration
+
+- [**OldJobobo**](https://github.com/OldJobobo) — the [Lumon theme](https://github.com/OldJobobo/omarchy-lumon-theme) was the structural model for this repo: file layout, numbered background naming, preview + wallpaper gallery in the README, and the general "ship a polished Omarchy theme" vibe.
+- [**signaldirective**](https://github.com/signaldirective) — the [Andromeda theme](https://github.com/signaldirective/andromeda) pioneered the optional-extras `install.sh` pattern (detect presence, prompt, back up, install) that this theme borrows.
