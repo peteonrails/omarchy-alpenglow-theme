@@ -125,6 +125,39 @@ install_vencord() {
   echo "  In Discord: Settings → Vencord → Themes → enable alpenglow.theme.css"
 }
 
+install_wezterm() {
+  notice "Wezterm"
+  if ! command -v wezterm >/dev/null 2>&1 && [[ ! -d "$HOME/.config/wezterm" ]]; then
+    echo "Wezterm not detected — skipping."
+    return
+  fi
+  if ! ask_yes_no "Install Alpenglow color scheme for Wezterm?"; then return; fi
+
+  mkdir -p "$HOME/.config/wezterm/colors"
+  cp "$THEME_DIR/wezterm.toml" "$HOME/.config/wezterm/colors/alpenglow.toml"
+  echo "  Installed: ~/.config/wezterm/colors/alpenglow.toml"
+  echo "  In wezterm.lua, add:"
+  echo "    config.color_scheme = 'Alpenglow'"
+  echo "    config.window_background_opacity = 0.87"
+}
+
+install_rio() {
+  notice "Rio"
+  if ! command -v rio >/dev/null 2>&1 && [[ ! -d "$HOME/.config/rio" ]]; then
+    echo "Rio not detected — skipping."
+    return
+  fi
+  if ! ask_yes_no "Install Alpenglow color scheme for Rio?"; then return; fi
+
+  mkdir -p "$HOME/.config/rio/themes"
+  cp "$THEME_DIR/rio.toml" "$HOME/.config/rio/themes/alpenglow.toml"
+  echo "  Installed: ~/.config/rio/themes/alpenglow.toml"
+  echo "  In ~/.config/rio/config.toml, add:"
+  echo '    theme = "alpenglow"'
+  echo "    [window]"
+  echo "    opacity = 0.87"
+}
+
 install_waybar_scheme() {
   notice "Waybar colorization"
   local style="$HOME/.config/waybar/style.css"
@@ -187,12 +220,14 @@ echo "  Alpenglow optional extras installer"
 echo "==================================================="
 echo
 echo "Core Omarchy theming is already applied by omarchy-theme-set."
-echo "This script installs the extras: CAVA, Zed, Warp, GTK4, Vencord, Waybar."
+echo "This script installs extras: CAVA, Zed, Warp, Wezterm, Rio, GTK4, Vencord, Waybar."
 echo "Each prompt is skippable — answer 'n' to leave it unchanged."
 
 install_cava
 install_zed
 install_warp
+install_wezterm
+install_rio
 install_gtk
 install_vencord
 install_waybar_scheme

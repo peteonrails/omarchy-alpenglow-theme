@@ -1,0 +1,44 @@
+# Alpenglow color scheme for Wezterm
+# Install: copy to ~/.config/wezterm/colors/alpenglow.toml
+# Activate in wezterm.lua:
+#   config.color_scheme = 'Alpenglow'
+#   config.window_background_opacity = 0.87
+
+[metadata]
+name = "Alpenglow"
+author = "peteonrails"
+
+[colors]
+foreground = "#FCFBF8"
+background = "#121515"
+
+cursor_bg = "#FCFBF8"
+cursor_fg = "#121515"
+cursor_border = "#FCFBF8"
+
+selection_fg = "#121515"
+selection_bg = "#FCFBF8"
+
+split = "#697171"
+
+ansi = [
+  "#121515",
+  "#A48364",
+  "#F8E7AE",
+  "#FEE88B",
+  "#6E89C2",
+  "#8BA6DF",
+  "#59c1c0",
+  "#FCFBF8",
+]
+
+brights = [
+  "#697171",
+  "#cca87f",
+  "#f6e59c",
+  "#fce668",
+  "#90acf5",
+  "#adc9ff",
+  "#70e4e3",
+  "#e5e4e1",
+]

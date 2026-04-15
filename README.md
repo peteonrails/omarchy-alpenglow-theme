@@ -95,6 +95,8 @@ It detects what's installed on your system and prompts for each extra:
 - **CAVA** — installs the color gradient to `~/.config/cava/themes/alpenglow` and (optionally) updates `~/.config/cava/config` to use it.
 - **Zed** — installs the theme to `~/.config/zed/themes/alpenglow.json`.
 - **Warp** — installs the theme to `~/.local/state/warp-terminal/themes/alpenglow.yaml`.
+- **Wezterm** — installs the color scheme to `~/.config/wezterm/colors/alpenglow.toml` (activate with `config.color_scheme = 'Alpenglow'` + `config.window_background_opacity = 0.87`).
+- **Rio** — installs the color scheme to `~/.config/rio/themes/alpenglow.toml` (activate with `theme = "alpenglow"` + `[window] opacity = 0.87`).
 - **GTK4** — overlays `gtk.css` into `~/.config/gtk-4.0/gtk.css` (backs up existing).
 - **Vencord** — installs the Discord theme to `~/.config/Vencord/themes/`.
 - **Waybar** — appends a fenced block to your `~/.config/waybar/style.css` that colorizes modules (clock gold, audio teal, active workspace accent blue, etc.). See [Waybar Colorization](#waybar-colorization) below.

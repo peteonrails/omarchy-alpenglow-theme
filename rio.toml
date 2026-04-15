@@ -1,0 +1,36 @@
+# Alpenglow color scheme for Rio
+# Install: copy to ~/.config/rio/themes/alpenglow.toml
+# Activate in ~/.config/rio/config.toml:
+#   theme = "alpenglow"
+#   [window]
+#   opacity = 0.87
+
+[colors]
+foreground = '#FCFBF8'
+background = '#121515'
+cursor = '#FCFBF8'
+selection-foreground = '#121515'
+selection-background = '#FCFBF8'
+
+black = '#121515'
+red = '#A48364'
+green = '#F8E7AE'
+yellow = '#FEE88B'
+blue = '#6E89C2'
+magenta = '#8BA6DF'
+cyan = '#59c1c0'
+white = '#FCFBF8'
+
+light-black = '#697171'
+light-red = '#cca87f'
+light-green = '#f6e59c'
+light-yellow = '#fce668'
+light-blue = '#90acf5'
+light-magenta = '#adc9ff'
+light-cyan = '#70e4e3'
+light-white = '#e5e4e1'
+
+tabs = '#697171'
+tabs-active = '#6E89C2'
+tabs-active-foreground = '#FCFBF8'
+tabs-foreground = '#FCFBF8'
