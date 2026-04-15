@@ -69,7 +69,7 @@ See [`colors.toml`](colors.toml) for the full 16-color ANSI palette.
     <td><img src="backgrounds/04-dolomites-mist.jpg" alt="Dolomites mist" /></td>
   </tr>
   <tr>
-    <td><img src="backgrounds/05-moonlit-valley.png" alt="Moonlit valley" /></td>
+    <td><img src="backgrounds/05-moonlit-valley.jpg" alt="Moonlit valley" /></td>
     <td><img src="backgrounds/06-devils-tower-clouds.jpg" alt="Devils Tower in clouds" /></td>
     <td><img src="backgrounds/07-purple-peak.jpg" alt="Purple peak" /></td>
     <td><img src="backgrounds/08-green-ridge.jpg" alt="Green ridge" /></td>

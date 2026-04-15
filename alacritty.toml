@@ -1,4 +1,9 @@
+[window]
+opacity = 0.85
+
 [colors]
+transparent_background_colors = true
+
 [colors.primary]
 background = "#121515"
 foreground = "#FCFBF8"

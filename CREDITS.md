@@ -16,7 +16,7 @@ corrected (or the image removed), please open an issue.
 | `02-alpenglow-peaks.jpg` | [whvn.cc/eolmrl](https://whvn.cc/eolmrl) | poune | — |
 | `03-golden-ridge.jpg` | [whvn.cc/9d9m2x](https://whvn.cc/9d9m2x) | Todd | — |
 | `04-dolomites-mist.jpg` | [whvn.cc/vqx9rm](https://whvn.cc/vqx9rm) | Petunai42 | [r/EarthPorn — Langkofel, Italian Dolomites](https://www.reddit.com/r/EarthPorn/comments/xj7xt2/langkofel_italian_dolomites_italy_oc_5999x3594/) |
-| `05-moonlit-valley.png` | [whvn.cc/5dlq17](https://whvn.cc/5dlq17) | mxdp1 | — |
+| `05-moonlit-valley.jpg` | [whvn.cc/5dlq17](https://whvn.cc/5dlq17) | mxdp1 | — |
 | `06-devils-tower-clouds.jpg` | [whvn.cc/4v9gqm](https://whvn.cc/4v9gqm) | skyliner | — |
 | `07-purple-peak.jpg` | [whvn.cc/kxy19m](https://whvn.cc/kxy19m) | jrmnt | — |
 | `08-green-ridge.jpg` | [whvn.cc/1j1v5v](https://whvn.cc/1j1v5v) | kejsirajbek | — |
