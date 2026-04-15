@@ -62,24 +62,27 @@ See [`colors.toml`](colors.toml) for the full 16-color ANSI palette.
   </tr>
 </table>
 
-## CAVA (optional)
+## Optional Extras
 
-For [CAVA](https://github.com/karlstav/cava) users, this theme ships a
-color gradient in `cava.theme`. It's not wired in automatically — CAVA reads
-themes from `~/.config/cava/themes/`.
+Omarchy auto-applies core theming (terminals, Hyprland, Waybar, Mako, SwayOSD, etc.)
+when you run `omarchy-theme-set alpenglow`. Some extras aren't wired into
+Omarchy's theme system and need a manual step. A helper script is included:
 
 ```bash
-cp ~/.config/omarchy/themes/alpenglow/cava.theme ~/.config/cava/themes/alpenglow
+cd ~/.config/omarchy/themes/alpenglow
+./install.sh
 ```
 
-Then in `~/.config/cava/config`:
+It detects what's installed on your system and prompts for each extra:
 
-```ini
-[color]
-theme = 'alpenglow'
-```
+- **CAVA** — installs the color gradient to `~/.config/cava/themes/alpenglow` and (optionally) updates `~/.config/cava/config` to use it.
+- **Zed** — installs the theme to `~/.config/zed/themes/alpenglow.json`.
+- **Warp** — installs the theme to `~/.local/state/warp-terminal/themes/alpenglow.yaml`.
+- **GTK4** — overlays `gtk.css` into `~/.config/gtk-4.0/gtk.css` (backs up existing).
+- **Vencord** — installs the Discord theme to `~/.config/Vencord/themes/`.
 
-Reload CAVA with `c` (while running) or restart it.
+Every prompt defaults to "no" — it won't touch anything without your OK. Existing
+files are backed up with a `.bak.<timestamp>` suffix before replacement.
 
 ## Requirements
 
