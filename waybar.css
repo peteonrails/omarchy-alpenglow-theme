@@ -1,0 +1,28 @@
+/* Alpenglow — extended Waybar color palette
+ *
+ * Omarchy's default template exposes only @foreground and @background.
+ * This file adds the rest of the palette so module-level coloring works.
+ * Your ~/.config/waybar/style.css already imports this via:
+ *
+ *   @import "../omarchy/current/theme/waybar.css";
+ */
+
+@define-color foreground #FCFBF8;
+@define-color background #121515;
+
+@define-color color0 #121515;
+@define-color color1 #A48364;  /* warm tan */
+@define-color color2 #F8E7AE;  /* cream */
+@define-color color3 #FEE88B;  /* gold */
+@define-color color4 #6E89C2;  /* sky blue (accent) */
+@define-color color5 #8BA6DF;  /* light blue */
+@define-color color6 #59c1c0;  /* teal cyan */
+@define-color color7 #FCFBF8;  /* warm white */
+@define-color color8 #697171;  /* muted gray */
+@define-color color9 #cca87f;
+@define-color color10 #f6e59c;
+@define-color color11 #fce668;
+@define-color color12 #90acf5;
+@define-color color13 #adc9ff;
+@define-color color14 #70e4e3;
+@define-color color15 #e5e4e1;

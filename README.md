@@ -97,9 +97,40 @@ It detects what's installed on your system and prompts for each extra:
 - **Warp** — installs the theme to `~/.local/state/warp-terminal/themes/alpenglow.yaml`.
 - **GTK4** — overlays `gtk.css` into `~/.config/gtk-4.0/gtk.css` (backs up existing).
 - **Vencord** — installs the Discord theme to `~/.config/Vencord/themes/`.
+- **Waybar** — appends a fenced block to your `~/.config/waybar/style.css` that colorizes modules (clock gold, audio teal, active workspace accent blue, etc.). See [Waybar Colorization](#waybar-colorization) below.
 
 Every prompt defaults to "no" — it won't touch anything without your OK. Existing
 files are backed up with a `.bak.<timestamp>` suffix before replacement.
+
+## Waybar Colorization
+
+Alpenglow ships an extended `waybar.css` with the full palette as CSS variables
+(`@color1`…`@color8`). These are available automatically in your Waybar config
+via the usual `@import "../omarchy/current/theme/waybar.css";` line.
+
+The install script appends a fenced block of per-module color rules to your
+`~/.config/waybar/style.css`. To uninstall, delete the block between the
+`alpenglow-waybar-scheme:start` / `:end` markers.
+
+If you'd rather wire it up manually, here's the block:
+
+```css
+#custom-omarchy                   { color: @color4; }
+#workspaces button.active label,
+#workspaces button.focused label  { color: @color4; }
+#clock                            { color: @color3; }
+#custom-weather                   { color: @color5; }
+#battery                          { color: @color2; }
+#pulseaudio                       { color: @color6; }
+#network, #bluetooth              { color: @color4; }
+#cpu                              { color: @color8; }
+#custom-update                    { color: @color1; }
+```
+
+Selectors assume the stock Omarchy Waybar module names. Unknown selectors are
+silently ignored, so modules you don't use won't cause issues. The `label`
+selector on workspace buttons is required because Omarchy's default style resets
+buttons with `all: initial`, which otherwise wipes the color.
 
 ## Requirements
 

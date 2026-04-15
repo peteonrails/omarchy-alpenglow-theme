@@ -125,6 +125,61 @@ install_vencord() {
   echo "  In Discord: Settings → Vencord → Themes → enable alpenglow.theme.css"
 }
 
+install_waybar_scheme() {
+  notice "Waybar colorization"
+  local style="$HOME/.config/waybar/style.css"
+  if [[ ! -f "$style" ]]; then
+    echo "No ~/.config/waybar/style.css — skipping."
+    return
+  fi
+
+  local marker_start="/* --- alpenglow-waybar-scheme:start --- */"
+  local marker_end="/* --- alpenglow-waybar-scheme:end --- */"
+
+  if grep -qF "$marker_start" "$style"; then
+    echo "Alpenglow waybar scheme already present — skipping."
+    return
+  fi
+
+  echo "This appends a warm/cool module colorization block to your waybar style.css:"
+  echo "  • Clock → gold"
+  echo "  • Battery → cream"
+  echo "  • Audio → teal"
+  echo "  • Network / Bluetooth / Active workspace → accent blue"
+  echo "  • CPU → muted gray"
+  echo "  • Update indicator → warm tan"
+  echo "The block is fenced with markers so you can remove it cleanly later."
+
+  if ! ask_yes_no "Append Alpenglow waybar colorization?"; then return; fi
+
+  backup "$style"
+
+  cat >>"$style" <<'EOF'
+
+/* --- alpenglow-waybar-scheme:start --- */
+/* Applied by omarchy-alpenglow-theme/install.sh — remove this fenced block to revert. */
+#custom-omarchy                   { color: @color4; }
+#workspaces button.active label,
+#workspaces button.focused label  { color: @color4; }
+#clock                            { color: @color3; }
+#custom-weather                   { color: @color5; }
+#battery                          { color: @color2; }
+#pulseaudio                       { color: @color6; }
+#network, #bluetooth              { color: @color4; }
+#cpu                              { color: @color8; }
+#custom-update                    { color: @color1; }
+/* --- alpenglow-waybar-scheme:end --- */
+EOF
+
+  echo "  Appended Alpenglow waybar scheme."
+  if command -v omarchy-restart-waybar >/dev/null 2>&1; then
+    omarchy-restart-waybar
+    echo "  Waybar restarted."
+  else
+    echo "  Restart waybar to see the change."
+  fi
+}
+
 # --- main ---
 
 echo "==================================================="
@@ -132,7 +187,7 @@ echo "  Alpenglow optional extras installer"
 echo "==================================================="
 echo
 echo "Core Omarchy theming is already applied by omarchy-theme-set."
-echo "This script installs the extras: CAVA, Zed, Warp, GTK4, Vencord."
+echo "This script installs the extras: CAVA, Zed, Warp, GTK4, Vencord, Waybar."
 echo "Each prompt is skippable — answer 'n' to leave it unchanged."
 
 install_cava
@@ -140,6 +195,7 @@ install_zed
 install_warp
 install_gtk
 install_vencord
+install_waybar_scheme
 
 notice "Done"
 echo "All prompted components processed."
