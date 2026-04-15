@@ -38,7 +38,7 @@ Cycle wallpapers with `omarchy-theme-bg-next` or from the Omarchy menu.
 
 - Hyprland window/border tuning (`hyprland.conf`)
 - Hyprlock styling (`hyprlock.conf`)
-- Terminal palettes for Alacritty, Kitty, Ghostty, and Warp
+- Terminal palettes for Alacritty, Kitty, Ghostty, Foot, and Warp
 - UI surfaces for GTK, Walker, mako, and SwayOSD
 - App themes for btop, Neovim, VSCode, Vencord, and Aether/Zed
 - Optional [CAVA](https://github.com/karlstav/cava) audio-visualizer palette (`cava.theme`)
