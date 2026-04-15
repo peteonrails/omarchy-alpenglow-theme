@@ -1,0 +1,26 @@
+name: Alpenglow
+accent: "#6E89C2"
+cursor: "#6E89C2"
+background: "#121515"
+foreground: "#FCFBF8"
+details: darker
+
+terminal_colors:
+  normal:
+    black:   "#121515"
+    red:     "#A48364"
+    green:   "#F8E7AE"
+    yellow:  "#FEE88B"
+    blue:    "#6E89C2"
+    magenta: "#8BA6DF"
+    cyan:    "#59c1c0"
+    white:   "#FCFBF8"
+  bright:
+    black:   "#697171"
+    red:     "#cca87f"
+    green:   "#f6e59c"
+    yellow:  "#fce668"
+    blue:    "#90acf5"
+    magenta: "#adc9ff"
+    cyan:    "#70e4e3"
+    white:   "#e5e4e1"
