@@ -80,7 +80,10 @@ See [`colors.toml`](colors.toml) for the full 16-color ANSI palette.
 
 Omarchy auto-applies core theming (terminals, Hyprland, Waybar, Mako, SwayOSD, etc.)
 when you run `omarchy-theme-set alpenglow`. Some extras aren't wired into
-Omarchy's theme system and need a manual step. A helper script is included:
+Omarchy's theme system and need a manual step. A helper script is included —
+thanks to [signaldirective](https://github.com/signaldirective) and the
+[Andromeda theme](https://github.com/signaldirective/andromeda) for the
+prompt/backup/install pattern this script follows:
 
 ```bash
 cd ~/.config/omarchy/themes/alpenglow
